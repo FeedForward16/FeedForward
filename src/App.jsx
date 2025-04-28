@@ -1,15 +1,9 @@
-import './App.css'
-
+import LoginContainer from './container/LoginContainer'
 function App() {
 
   return (
     <>
-      <div>
-        <p>
-          Hello
-        </p>
-      </div>
-      
+      <LoginContainer/>
     </>
   )
 }
