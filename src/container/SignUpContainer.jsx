@@ -1,23 +1,24 @@
 import React, { useState } from "react";
 import Login from "../pages/LoginPage";
-const LoginContainer = () => {
+import Signup from "../pages/Signup";
+const SignUpContainer = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = (e) => {
+  const handleSignUp = (e) => {
     e.preventDefault();
     console.log({ email, password });
   }
 
   return (
-    <Login
+    <Signup
       email={email}
       password={password}
       onEmailChange={(e) => setEmail(e.target.value)}
       onPasswordChange={(e) => setPassword(e.target.value)}
-      onLogin={handleLogin}
+      onSignUp={handleSignUp}
     />
   );
 };
 
-export default LoginContainer;
+export default SignUpContainer;

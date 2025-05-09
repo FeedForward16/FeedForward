@@ -1,9 +1,18 @@
-import React from 'react'
-import './SignUp.css'; // Link to the external CSS file
+import React from 'react';
+import './LoginPage.css'; // Link to the external CSS file
 
-const Signup = () => {
+const LoginPage = () => {
   return (
     <div className="login-container">
+      <header className="header">
+        <h1>Feed<span className="highlight">Forward</span></h1>
+        <nav className="nav">
+          <a href="#dashboard">Dashboard</a>
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+        </nav>
+      </header>
+      
       <div className="content">
         <div className="info">
           <h2>Collect video feedback with <span className="highlight">precision</span></h2>
@@ -12,25 +21,21 @@ const Signup = () => {
           </p>
           <button className="dashboard-button">Go to Dashboard</button>
         </div>
-        <div className="SignUp">
-          <h3>Create an Account</h3>
-          <p>Fill in the information to create your account</p>
+        <div className="login">
+          <h3>Login</h3>
+          <p>Enter your credentials to access your account</p>
           <form>
-            <label>Name</label>
-            <input placeholder="Enter your name" required />
             <label>Email</label>
             <input type="email" placeholder="Enter your email" required />
             <label>Password</label>
             <input type="password" placeholder="Enter your password" required />
-            <label>Confirm Password</label>
-            <input type="password" placeholder="Confirm your password" required />
-            <button type="submit" className="SignUp-button">Sign Up</button>
+            <button type="submit" className="login-button">Login</button>
           </form>
-          <p className="Victory">Already have an account? <a href="#LoginPage">Login</a></p>
+          <p className="signup">Don't have an account? <a href="#Signup">Sign up</a></p>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Signup
+export default LoginPage;
