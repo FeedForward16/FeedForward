@@ -1,13 +1,15 @@
-import React from "react";
-import "./LoginPage.css";
-import { useNavigate } from "react-router-dom";
+// src/pages/LandingPage.jsx
+import React, { useState } from "react";
+import "./landing.css";
+import LoginContainer from "../../container/LoginContainer";
+import SignUpContainer from "../../container/SignUpContainer";
+const LandingPage = () => {
+  const [display, setDisplay] = useState(true);
 
-const LoginPage = () => {
-  const navigate = useNavigate();
-
-  const navHandler = () => {
-    navigate("/sign-up");
+  const signUphandler = () => {
+    setDisplay(false);
   };
+
   return (
     <div className="login-container">
       <header className="header">
@@ -34,25 +36,15 @@ const LoginPage = () => {
           </p>
           <button className="dashboard-button">Go to Dashboard</button>
         </div>
-        <div className="login">
-          <h3>Login</h3>
-          <p>Enter your credentials to access your account</p>
-          <form>
-            <label>Email</label>
-            <input type="email" placeholder="Enter your email" required />
-            <label>Password</label>
-            <input type="password" placeholder="Enter your password" required />
-            <button type="submit" className="login-button">
-              Login
-            </button>
-          </form>
-          <p className="signup">
-            Don't have an account? <a onClick={navHandler}>Sign up</a>
-          </p>
-        </div>
+
+        {display ? (
+          <LoginContainer onClick={signUphandler} />
+        ) : (
+          <SignUpContainer />
+        )}
       </div>
     </div>
   );
 };
 
-export default LoginPage;
+export default LandingPage;

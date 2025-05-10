@@ -1,4 +1,4 @@
-import LoginContainer from "./container/LoginContainer";
+import LandingPage from "./pages/LandingPage/LandingPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SignUpContainer from "./container/SignUpContainer";
 import AppLayOut from "./layouts/AppLayOut";
@@ -9,7 +9,7 @@ function App() {
       children: [
         {
           path: "/",
-          element: <LoginContainer />,
+          element: <LandingPage />,
         },
         {
           path: "/sign-up",

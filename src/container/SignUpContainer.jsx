@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import Login from "../pages/LoginPage";
-import Signup from "../pages/Signup";
+import { useState } from "react";
+import Signup from "../pages/Signup/Signup";
 const SignUpContainer = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

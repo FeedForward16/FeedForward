@@ -2,72 +2,82 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
-  }
-  
-  .login-container {
+    }
+    
+    .login-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-  }
-  
-  .header h1 {
+    }
+    
+    .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header h1 {
     font-size: 24px;
     margin: 0;
     color: black;
-  }
-  .info {
+    }
+    .info {
     color: black;
-  }
-  .highlight {
+    }
+    .highlight {
     color: #007bff;
-  }
-  .info p {
+    }
+    .info p {
     color: rgba(0, 0, 0,0.8);
-  }
-  .nav{
+    }
+    .nav{
     justify-content: center;
     display: flex;
     align-items: center;
-  }
-  .nav a {
+    }
+    .nav a {
     margin-left: 15px;
     text-decoration: none;
     justify-content: center;
     color: #333;
     font-weight: bold;
-  }
-  .login h3{
+    }
+    .login h3{
     color: black;
-  }
-  .nav a:hover {
+    }
+    .nav a\:hover {
     color: #007bff;
-  }
-  
-  .content {
+    }
+    
+    .content {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
     width: 100%;
     max-width: 1200px;
-  }
-  
-  .info {
+    }
+    
+    .info {
     flex: 1;
     padding: 20px;
-  }
-  
-  .info h2 {
+    }
+    
+    .info h2 {
     font-size: 32px;
     margin-bottom: 20px;
-  }
-  
-  .info p {
+    }
+    
+    .info p {
     font-size: 18px;
     margin-bottom: 20px;
-  }
-  
-  .dashboard-button {
+    }
+    
+    .dashboard-button {
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
@@ -75,42 +85,42 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .dashboard-button:hover {
+    }
+    
+    .dashboard-button\:hover {
     background-color: #0056b3;
-  }
-  
-  .SignUp {
+    }
+    
+    .login {
     flex: 1;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .login h3 {
+    }
+    
+    .login h3 {
     margin: 0;
     font-size: 24px;
     margin-bottom: 10px;
-  }
-  .form input{
+    }
+    .form input{
     background-color: white;
-  }
-  .login p {
+    }
+    .login p {
     margin: 0 0 20px 0;
     font-size: 14px;
     color: #555;
-  }
-  
-  .login form label {
+    }
+    
+    .login form label {
     display: block;
     margin-bottom: 5px;
     font-size: 14px;
     color: #333;
-  }
-  
-  .login form input {
+    }
+    
+    .login form input {
     width: 95%;
     padding: 10px;
     margin-bottom: 15px;
@@ -118,9 +128,9 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: rgb(250, 240, 240);
-  }
-  
-  .SignUp-button {
+    }
+    
+    .login-button {
     width: 99%;
     padding: 10px;
     font-size: 16px;
@@ -129,28 +139,29 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .nav {
+    }
+    
+    .nav {
     display : flex;
     
-  }
-  .login-button:hover {
+    }
+    .login-button\:hover {
     background-color: #7574ba;
-  }
-  
-  .signup {
+    }
+    
+    .signup {
     margin-top: 15px;
     font-size: 14px;
     text-align: center;
-  }
-  
-  .signup a {
+    }
+    
+    .signup a {
     color: #007bff;
     text-decoration: none;
-  }
-  
-  .signup a:hover {
+    }
+    
+    .signup a\:hover {
     text-decoration: underline;
-  }
-  
+    }
+    
+    
