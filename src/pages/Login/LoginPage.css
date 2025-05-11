@@ -134,11 +134,12 @@ body {
     width: 99%;
     padding: 10px;
     font-size: 16px;
-    color: #fff;
+    color: #ffffff;
     background-color: #007bff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
   .nav {
@@ -146,18 +147,20 @@ body {
     
   }
   .login-button:hover {
-    background-color: #7574ba;
+    background-color:  #0056b3;
   }
   
   .signup {
-    margin-top: 15px;
+    margin-top: 5px;
     font-size: 14px;
     text-align: center;
+    color: #555555;
   }
   
   .signup a {
     color: #007bff;
     text-decoration: none;
+    font-weight: bold;
   }
   
   .signup a:hover {

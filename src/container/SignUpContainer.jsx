@@ -17,6 +17,7 @@ const SignUpContainer = ({onClick}) => {
       email={email}
       password={password}
       confirmpassword={confirmpassword}
+      onNameChange={(e) => setName(e.target.value)}
       onEmailChange={(e) => setEmail(e.target.value)}
       onPasswordChange={(e) => setPassword(e.target.value)}
       onConfirmingPassword={(e) => setConfirmPassword(e.target.value)}

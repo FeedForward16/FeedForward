@@ -9,7 +9,9 @@ const LandingPage = () => {
   const signUphandler = () => {
     setDisplay(false);
   };
-
+  const Loginhandler = () => {
+    setDisplay(true);
+  };
   return (
     <div className="login-container">
       <header className="header">
@@ -40,7 +42,7 @@ const LandingPage = () => {
         {display ? (
           <LoginContainer onClick={signUphandler} />
         ) : (
-          <SignUpContainer />
+          <SignUpContainer onClick={Loginhandler}/>
         )}
       </div>
     </div>

@@ -30,7 +30,7 @@ body {
 .signup form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .signup label {
@@ -41,7 +41,7 @@ body {
   color: #555555;
 }
 
-.signup input {
+.signup form input {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;

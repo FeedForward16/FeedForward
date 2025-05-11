@@ -6,6 +6,7 @@ const Signup = ({
   email,
   password,
   confirmpassword,
+  onNameChange,
   onEmailChange,
   onPasswordChange,
   onConfirmingPassword,
@@ -22,6 +23,7 @@ const Signup = ({
         type="name"
         value={name}
         placeholder="Enter your Name"
+        onChange={onNameChange}
         required
       />
       <label>Email</label>
@@ -45,7 +47,7 @@ const Signup = ({
         type="password"
         value={confirmpassword}
         onChange={onConfirmingPassword}
-        placeholder="Confirming your password"
+        placeholder="Confirm your password"
         required
       />
       <button type="submit" className="signup-button">

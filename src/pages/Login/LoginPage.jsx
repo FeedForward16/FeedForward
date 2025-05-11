@@ -45,7 +45,7 @@ const LoginPage = ({
       <p className="signup">
         Don't have an account?{" "}
         <a onClick={onSignupClick} style={{ cursor: "pointer" }}>
-          Sign up
+          SignUp
         </a>
       </p>
     </div>
